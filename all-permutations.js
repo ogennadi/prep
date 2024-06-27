@@ -1,3 +1,5 @@
+// Wrong for [1, 2, 3]: Does not output [3, 2, 1]
+
 function permutations(a){
     var  generate = (k) => {
         if(k==1){
@@ -5,7 +7,7 @@ function permutations(a){
         }else{
             generate(k-1)
 
-            for (let i = 0; i < k - 1; i++) {
+            for (let i = 0; i < k-1; i++) {
                 if(k%2){
                     swap(i, k-1)
                 }else{
@@ -26,6 +28,6 @@ function permutations(a){
     generate(a.length)
 }
 
-permutations([1, 2])
+permutations([1, 2, 3])
 
 // https://en.wikipedia.org/wiki/Heap%27s_algorithm
