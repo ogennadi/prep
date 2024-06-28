@@ -1,33 +1,23 @@
-// Wrong for [1, 2, 3]: Does not output [3, 2, 1]
+const permutator = (inputArr) => {
+    let result = [];
 
-function permutations(a){
-    var  generate = (k) => {
-        if(k==1){
-            console.log(a);
-        }else{
-            generate(k-1)
-
-            for (let i = 0; i < k-1; i++) {
-                if(k%2){
-                    swap(i, k-1)
-                }else{
-                    swap(0, k-1)
-                }
-
-                generate(k-1)
+    const permute = (arr, m = []) => {
+        if (arr.length === 0) {
+            result.push(m)
+        } else {
+            for (let i = 0; i < arr.length; i++) {
+                let curr = arr.slice();
+                let next = curr.splice(i, 1);
+                permute(curr, m.concat(next))
             }
         }
     }
 
-    var swap =  (i, j) => {
-        const t = a[i];
-        a[i] = a[j]
-        a[j] = t;
-    }
+    permute(inputArr)
 
-    generate(a.length)
+    return result;
 }
 
-permutations([1, 2, 3])
+console.table(permutator([1, 2, 3]))
 
-// https://en.wikipedia.org/wiki/Heap%27s_algorithm
+// https://stackoverflow.com/questions/9960908/permutations-in-javascript

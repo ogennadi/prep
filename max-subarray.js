@@ -1,24 +1,24 @@
 function maxSubarray(a){
-    var bestSum = Number.MIN_SAFE_INTEGER
-    var currentSum = 0;
+    var maxSoFar = Number.MIN_SAFE_INTEGER
+    var maxEndingHere = 0;
     var start, end, s = 0;
 
     for (let i = 0; i < a.length; i++) {
-        currentSum += a[i];
+        maxEndingHere += a[i];
 
-        if(bestSum < currentSum){
-            bestSum = currentSum;
+        if(maxSoFar < maxEndingHere){
+            maxSoFar = maxEndingHere;
             start = s;
             end = i;
         }
 
-        if(currentSum < 0){
-            currentSum = 0;
+        if(maxEndingHere < 0){
+            maxEndingHere = 0;
             s = i+1;
         }
     }
 
-    console.log("max: ", bestSum, " start: ", start, " end: ", end);
+    console.log("max: ", maxSoFar, " start: ", start, " end: ", end);
 }
 
 maxSubarray([-2, -3, 4, -1, -2, 1, 5, -3]);
