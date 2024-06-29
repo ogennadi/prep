@@ -21,3 +21,6 @@ const permutator = (inputArr) => {
 console.table(permutator([1, 2, 3]))
 
 // https://stackoverflow.com/questions/9960908/permutations-in-javascript
+
+// main: var, recursive fn, fn call
+// recursive fn: base case, loop

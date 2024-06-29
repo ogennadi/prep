@@ -29,3 +29,7 @@ function minCoinChange(coins, amount) {
 }
 
 minCoinChange([1 ,6 ,10, 25], 37)
+
+// main: cache, recursive fn, fn call
+// recursive fn: base cases, 3 vars, loop, update cache
+// loop: update var, 2 ifs

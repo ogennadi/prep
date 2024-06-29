@@ -45,3 +45,5 @@ if (identicalTrees(root1, root2))
     console.log("Both trees are identical");
 else
     console.log("Trees are not identical");
+
+// main: 2 ifs, return
