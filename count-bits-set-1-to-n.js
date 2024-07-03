@@ -1,3 +1,33 @@
+// totalSetBitsFrom1ToN(4)
+// runtime: unknown
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 function totalSetBitsFrom1ToN(n) {
     let totalSetBitCount = 0;
     for (let number = 1; number <= n; number++) {

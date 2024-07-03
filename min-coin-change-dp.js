@@ -1,3 +1,57 @@
+// minCoinChange([1 ,6 ,10, 25], 37)
+// cache, recursive fn, fn call
+// recursive fn: base case-s, 3 vars, loop, update cache
+// loop: update var, 2 ifs
+
+// runtime O(m * V)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 function minCoinChange(coins, amount) {
     const cache = [];
 

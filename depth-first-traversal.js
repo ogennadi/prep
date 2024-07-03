@@ -1,3 +1,58 @@
+// main: 3 vars, while loop
+// loop: update var, if
+
+// runtime: O(n+m)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // A--B--C
 // |  |
 // D--E--F
@@ -33,5 +88,3 @@ function dfs(graph, start) {
 }
 
 console.log(dfs(graph, 'A'));  // [ 'A', 'D', 'E', 'F', 'B', 'C' ]
-// main: 3 vars, while loop
-// loop: update var, if

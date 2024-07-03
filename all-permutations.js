@@ -1,3 +1,50 @@
+// permutator([1, 2, 3])
+// permutator: result, recursive fn `permute`, fn call
+
+// permute(array, soln): base case, loop over array
+
+// runtime: O(n!)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const permutator = (inputArr) => {
     let result = [];
 
@@ -8,7 +55,9 @@ const permutator = (inputArr) => {
             for (let i = 0; i < arr.length; i++) {
                 let curr = arr.slice();
                 let next = curr.splice(i, 1);
-                permute(curr, m.concat(next))
+                let m1 = m.concat(next);
+                console.log(curr, m1)
+                permute(curr, m1)
             }
         }
     }
@@ -21,6 +70,3 @@ const permutator = (inputArr) => {
 console.table(permutator([1, 2, 3]))
 
 // https://stackoverflow.com/questions/9960908/permutations-in-javascript
-
-// main: var, recursive fn, fn call
-// recursive fn: base case, loop

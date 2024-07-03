@@ -1,3 +1,59 @@
+// maxSubarray([-2, -3, 4, -1, -2, 1, 5, -3]);
+// 5 vars, loop
+// loop: update var, 2 ifs
+
+// runtime: O(n)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 function maxSubarray(a){
     var maxSoFar = Number.MIN_SAFE_INTEGER
     var maxEndingHere = 0;
@@ -25,14 +81,6 @@ maxSubarray([-2, -3, 4, -1, -2, 1, 5, -3]);
 
 
 /*
-main: 5 vars, loop
-loop: update var, 2 ifs
-
-
-
-
-
-
 a = [-2, -3, 4, -1, -2, 1, 5, -3]
 
 i       m_s_f   m_e_h   start   end     s

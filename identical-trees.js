@@ -1,4 +1,57 @@
-// JavaScript program to see if two trees are identical
+// identicalTrees(root1, root2))
+// 2 ifs, 1 return
+
+// runtime: O(n) number of nodes of the biggest tree
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 class Node
 {

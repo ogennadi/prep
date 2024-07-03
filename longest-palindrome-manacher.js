@@ -1,3 +1,59 @@
+// longestPalSubstr("forgeeksskeegfor"));
+// 4 vars, loop
+// loop: update vars, while loop, update vars, while loop
+// while loop: if,  update vars
+
+// Runtime O(n)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 function longestPalSubstr(s) {
     const n = s.length;
     let start = 0, len = 1;
@@ -40,6 +96,3 @@ function longestPalSubstr(s) {
 const str = "forgeeksskeegfor";
 console.log("\nLength is: " + longestPalSubstr(str));
 
-// main: 4 vars, loop
-// loop: update vars, while loop, update vars, while loop
-// while loop: if,  update vars

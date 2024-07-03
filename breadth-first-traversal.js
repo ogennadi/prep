@@ -1,3 +1,46 @@
+// traverse(graph, 'a')
+// 3 vars, while loop on stack
+// loop; pop stack, if
+
+// runtime: O(v+e)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // A--B--C
 // |  |
 // D--E--F
