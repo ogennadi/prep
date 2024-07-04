@@ -55,3 +55,36 @@ Runtime O(n)
     5 vars, loop
     loop: update var, 2 ifs
 runtime: O(n)
+
+## Find the maximum sub-array product
+    3 vars, loop
+Runtime: O(n)
+
+## Longest repeating subsequence
+    cache, 2 nested loops, if
+Runtime: O(n^2)
+
+## Find all occurrences of pattern in string
+Runtime: unknown
+
+## Find the missing number
+Runtime: O(n)
+
+## Are brackets in string balanced
+    loop over string, 4 cases
+Runtime: O(n)
+
+## Find the longest common subsequence of 2 strings
+    base case, recursive case, another base, another recursive
+Runtime: O(n)
+
+## Find all subsets of array
+    2 nested loops, if
+Runtime: O(2^n)
+
+## Find a solution to fractional knapsack problem
+Runtime: O(n * logn)
+
+## Find a solution to 0/1 knapsack problem
+    cache, 2 nested loops, if
+Runtime: O(2^n)
