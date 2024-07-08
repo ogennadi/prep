@@ -1,9 +1,9 @@
 ## Find a solution to the N-queens problem
     nqueens(4, 4): [[]]
-    base case and call
+    base case and call addQueen
     
     addQueen(newRow, cols): bool
-    2 vars, if in a loop in a loop, return
+    var solution, var prevSolution, if in a loop in a loop, return
     
     hasConflict(newRow, newColumn, solution)
     if in a loop, then return.
@@ -60,9 +60,6 @@ runtime: O(n)
     3 vars, loop
 Runtime: O(n)
 
-## Longest repeating subsequence
-    cache, 2 nested loops, if
-Runtime: O(n^2)
 
 ## Find all occurrences of pattern in string
 Runtime: unknown
@@ -74,9 +71,13 @@ Runtime: O(n)
     loop over string, 4 cases
 Runtime: O(n)
 
-## Find the longest common subsequence of 2 strings
+## Find a longest repeating subsequence
+    cache, 2 nested loops, if
+Runtime: O(n^2)
+
+## Find a longest common subsequence
     base case, recursive case, another base, another recursive
-Runtime: O(n)
+Runtime: O(n^2)
 
 ## Find all subsets of array
     2 nested loops, if

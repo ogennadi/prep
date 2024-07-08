@@ -53,32 +53,32 @@
 
 
 
-function nqueens(rowsi, columns) {
-    if (rowsi <= 0){
+function nqueens(rows, columns) {
+    if (rows <= 0){
         return [[]]
     }else{
-        return addQueen(rowsi-1, columns)
+        return addQueen(rows-1, columns)
     }
 }
 
-function addQueen(newRow, cols){
+function addQueen(row, columns){
     var solutions = []
-    var prev = nqueens(newRow, cols)
+    var prev = nqueens(row, columns)
     for (var soln of prev) {
-        for(var newCol = 0; newCol < cols; newCol++){
-            if(!hasConflict(newRow, newCol, soln)){
-                solutions.push(soln.concat([newCol]))
+        for(var column = 0; column < columns; column++){
+            if(!hasConflict(row, column, soln)){
+                solutions.push(soln.concat([column]))
             }
         }
     }
     return solutions;
 }
 
-function hasConflict(newRow, newColumn, solution){
-    for(var i = 0; i < newRow; i++){
-        if(solution[i]   === newColumn ||
-           solution[i]+i === newColumn + newRow ||
-           solution[i]-i === newColumn - newRow){
+function hasConflict(row, column, solution){
+    for(var i = 0; i < row; i++){
+        if(solution[i]   === column ||
+           solution[i]+i === column + row ||
+           solution[i]-i === column - row){
             return true
         }
     }
